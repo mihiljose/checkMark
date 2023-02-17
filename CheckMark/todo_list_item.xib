@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="todo_list_item" rowHeight="137" id="KGk-i7-Jjw" customClass="todo_list_item" customModule="CheckMark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="797" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="797" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHr-ak-kKO">
+                        <rect key="frame" x="5" y="5" width="787" height="127"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-I1-kJ2">
+                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="aAv-fT-j4O"/>
+                                    <constraint firstAttribute="height" constant="50" id="wVh-HG-Ute"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="uncheck"/>
+                                <connections>
+                                    <action selector="checkbobButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="F76-9s-JeO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-Xk-1FH">
+                                <rect key="frame" x="75" y="5" width="707" height="43"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-qN-u02">
+                                <rect key="frame" x="75" y="53" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXm-I1-kJ2" firstAttribute="leading" secondItem="nHr-ak-kKO" secondAttribute="leading" constant="5" id="Gie-SA-bd1"/>
+                            <constraint firstItem="bsb-Xk-1FH" firstAttribute="top" secondItem="nHr-ak-kKO" secondAttribute="top" constant="5" id="Hh3-BE-dBX"/>
+                            <constraint firstItem="aXm-I1-kJ2" firstAttribute="top" secondItem="nHr-ak-kKO" secondAttribute="top" constant="5" id="MJc-QX-Bs6"/>
+                            <constraint firstItem="L1u-qN-u02" firstAttribute="top" secondItem="bsb-Xk-1FH" secondAttribute="bottom" constant="5" id="Thq-uN-3ig"/>
+                            <constraint firstItem="L1u-qN-u02" firstAttribute="leading" secondItem="aXm-I1-kJ2" secondAttribute="trailing" constant="20" id="axg-BH-5E6"/>
+                            <constraint firstItem="bsb-Xk-1FH" firstAttribute="leading" secondItem="aXm-I1-kJ2" secondAttribute="trailing" constant="20" id="q6C-OU-Ndl"/>
+                            <constraint firstAttribute="trailing" secondItem="bsb-Xk-1FH" secondAttribute="trailing" constant="5" id="qvp-09-jUE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nHr-ak-kKO" secondAttribute="trailing" constant="5" id="7Iw-bA-bfU"/>
+                    <constraint firstItem="nHr-ak-kKO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Z76-WA-EOB"/>
+                    <constraint firstAttribute="bottom" secondItem="nHr-ak-kKO" secondAttribute="bottom" constant="5" id="ivL-nq-E2j"/>
+                    <constraint firstItem="nHr-ak-kKO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uJT-iU-cuX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="todo_list_item"/>
+            <connections>
+                <outlet property="checkboxButton" destination="aXm-I1-kJ2" id="waZ-9K-Vvr"/>
+                <outlet property="todoTitle" destination="bsb-Xk-1FH" id="hO3-Jz-vs5"/>
+            </connections>
+            <point key="canvasLocation" x="-860.30534351145036" y="-16.549295774647888"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uncheck" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
