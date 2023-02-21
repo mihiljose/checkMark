@@ -33,14 +33,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-Xk-1FH">
-                                <rect key="frame" x="75" y="5" width="707" height="43"/>
+                                <rect key="frame" x="75" y="5" width="707" height="64.666666666666671"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-qN-u02">
-                                <rect key="frame" x="75" y="53" width="72" height="21"/>
+                                <rect key="frame" x="75" y="74.666666666666671" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,6 +69,7 @@
             <accessibility key="accessibilityConfiguration" identifier="todo_list_item"/>
             <connections>
                 <outlet property="checkboxButton" destination="aXm-I1-kJ2" id="waZ-9K-Vvr"/>
+                <outlet property="timestamp" destination="L1u-qN-u02" id="ltg-gr-1dX"/>
                 <outlet property="todoTitle" destination="bsb-Xk-1FH" id="hO3-Jz-vs5"/>
             </connections>
             <point key="canvasLocation" x="-860.30534351145036" y="-16.549295774647888"/>

@@ -10,6 +10,7 @@ import UIKit
 class addEntryViewController: UIViewController {
 
     @IBOutlet weak var itemTextField: UITextField!
+    @IBOutlet weak var timeStamp: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
