@@ -11,17 +11,17 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var items: [String] = []
+    var items = [String]()
     var cellHeight : CGFloat = 0
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-        //return items.count
+        //return 1
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todo_list_item", for: indexPath) as! todo_list_item
-        cell.todoTitle.text = "lorem ipsum vfjhhj vjvv  g hgh hg hg hg h hg hg ghg hg h jjjky j jkhkg hgjgj jj fj fhhjjgjj jjgj gjgj gjjhh j jh jh"
+        cell.todoTitle.text = items[indexPath.row]
         return cell
     }
     
@@ -50,10 +50,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var profilePicButton: UIImageView!
     @IBOutlet weak var today_checklists: UITableView!
     
+    @IBAction func addButton(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "addEntryViewController") as! addEntryViewController
+        vc.title = "New Task"
+        navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func hideCompletedButton(_ sender: Any) {
-        let sheetViewController = tryViewController()
-        sheetViewController.modalPresentationStyle = .pageSheet
-        present(sheetViewController, animated: true, completion: nil)
+//        let sheetViewController = tryViewController()
+//        sheetViewController.modalPresentationStyle = .pageSheet
+//        present(sheetViewController, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,10 +86,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 }
 
-class MySheetViewController: UIViewController {
-    // Your sheet view controller content
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-}
+
 
