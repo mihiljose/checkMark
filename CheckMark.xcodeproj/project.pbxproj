@@ -25,6 +25,7 @@
 		A0B7669D299F52E40067ACE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B7669B299F52E40067ACE8 /* LaunchScreen.storyboard */; };
 		A0B766A6299F5C6D0067ACE8 /* todo_list_item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B766A4299F5C6D0067ACE8 /* todo_list_item.swift */; };
 		A0B766A7299F5C6D0067ACE8 /* todo_list_item.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B766A5299F5C6D0067ACE8 /* todo_list_item.xib */; };
+		A0D772C829A5EC6A0004E978 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D772C729A5EC6A0004E978 /* SheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A0B7669E299F52E40067ACE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B766A4299F5C6D0067ACE8 /* todo_list_item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_list_item.swift; sourceTree = "<group>"; };
 		A0B766A5299F5C6D0067ACE8 /* todo_list_item.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = todo_list_item.xib; sourceTree = "<group>"; };
+		A0D772C729A5EC6A0004E978 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				A0B76692299F52E30067ACE8 /* SceneDelegate.swift */,
 				A0B76694299F52E30067ACE8 /* ViewController.swift */,
 				A0B76696299F52E30067ACE8 /* Main.storyboard */,
+				A0D772C729A5EC6A0004E978 /* SheetViewController.swift */,
 				A0B76699299F52E40067ACE8 /* Assets.xcassets */,
 				A0B7669B299F52E40067ACE8 /* LaunchScreen.storyboard */,
 				A0B7669E299F52E40067ACE8 /* Info.plist */,
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D772C829A5EC6A0004E978 /* SheetViewController.swift in Sources */,
 				A0B76695299F52E30067ACE8 /* ViewController.swift in Sources */,
 				A087A3B729A3510400E674C0 /* addEntryViewController.swift in Sources */,
 				A0B76691299F52E30067ACE8 /* AppDelegate.swift in Sources */,

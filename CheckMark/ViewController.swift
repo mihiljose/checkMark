@@ -53,6 +53,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         optionalString = dateString // Assign the string to the optional string variable
         cell.timestamp?.text = optionalString
         print(optionalString)
+        
+        cell.descriptionTodo?.text = todoItem.description
 
             return cell
     }
@@ -139,11 +141,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //        sheetViewController.modalPresentationStyle = .pageSheet
 //        present(sheetViewController, animated: true, completion: nil)
     }
+    
+    private let floatingButton: UIButton = {
+        let FABbutton = UIButton (frame: CGRect (x: 0, y: 0, width: 60, height: 60))
+        FABbutton.layer.masksToBounds = true
+        FABbutton.layer.cornerRadius = 30
+        FABbutton.backgroundColor = . black
+        let image = UIImage (systemName: "plus", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        FABbutton.setImage (image, for: .normal)
+        FABbutton.tintColor = .white
+        FABbutton.setTitleColor( .white, for: .normal)
+        return FABbutton
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         today_checklists.dataSource = self
         today_checklists.delegate = self
+        
+        view.addSubview(floatingButton)
+        floatingButton.addTarget(self, action: #selector(didTapFAButton), for: .touchUpInside)
         
         ref = Database.database().reference()
     
@@ -171,6 +189,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        floatingButton.frame = CGRect(
+            x: view.frame.size.width - 70 - 8,
+            y: view.frame.size.height - 100 - 8,
+        width: 60,
+        height: 60)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         let itemsObject = UserDefaults.standard.object(forKey: "items")
         
@@ -184,7 +211,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         today_checklists.reloadData()
     }
     
-
+    @objc private func didTapFAButton(){
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        let sheetPresenationController =
+        storyboard.instantiateViewController(withIdentifier: "SheetViewController") as! SheetViewController
+        self.present (sheetPresenationController, animated: true, completion: nil)
+    }
 
 }
 

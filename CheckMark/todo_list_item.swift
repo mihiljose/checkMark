@@ -10,6 +10,7 @@ import UIKit
 class todo_list_item: UITableViewCell {
 
     @IBOutlet weak var timestamp: UILabel!
+    @IBOutlet weak var descriptionTodo: UILabel!
     @IBOutlet weak var checkboxButton: UIButton!
     @IBOutlet weak var todoTitle: UILabel!
     

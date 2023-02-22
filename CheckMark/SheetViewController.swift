@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SheetViewController: UIViewController {
+class SheetViewController: UIViewController, UISheetPresentationControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()

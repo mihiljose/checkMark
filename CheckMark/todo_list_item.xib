@@ -32,17 +32,22 @@
                                     <action selector="checkbobButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="F76-9s-JeO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-Xk-1FH">
-                                <rect key="frame" x="75" y="5" width="707" height="64.666666666666671"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-Xk-1FH">
+                                <rect key="frame" x="75" y="5" width="707" height="21.666666666666668"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3E-Kb-usQ">
+                                <rect key="frame" x="75" y="31.666666666666664" width="87.333333333333314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-qN-u02">
-                                <rect key="frame" x="75" y="74.666666666666671" width="72" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="12:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-qN-u02">
+                                <rect key="frame" x="80" y="57.666666666666657" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -50,10 +55,12 @@
                         <constraints>
                             <constraint firstItem="aXm-I1-kJ2" firstAttribute="leading" secondItem="nHr-ak-kKO" secondAttribute="leading" constant="5" id="Gie-SA-bd1"/>
                             <constraint firstItem="bsb-Xk-1FH" firstAttribute="top" secondItem="nHr-ak-kKO" secondAttribute="top" constant="5" id="Hh3-BE-dBX"/>
+                            <constraint firstItem="P3E-Kb-usQ" firstAttribute="leading" secondItem="aXm-I1-kJ2" secondAttribute="trailing" constant="20" id="L3J-UL-UPd"/>
                             <constraint firstItem="aXm-I1-kJ2" firstAttribute="top" secondItem="nHr-ak-kKO" secondAttribute="top" constant="5" id="MJc-QX-Bs6"/>
-                            <constraint firstItem="L1u-qN-u02" firstAttribute="top" secondItem="bsb-Xk-1FH" secondAttribute="bottom" constant="5" id="Thq-uN-3ig"/>
-                            <constraint firstItem="L1u-qN-u02" firstAttribute="leading" secondItem="aXm-I1-kJ2" secondAttribute="trailing" constant="20" id="axg-BH-5E6"/>
+                            <constraint firstItem="L1u-qN-u02" firstAttribute="leading" secondItem="nHr-ak-kKO" secondAttribute="leading" constant="80" id="dgE-5Q-dDU"/>
+                            <constraint firstItem="P3E-Kb-usQ" firstAttribute="top" secondItem="bsb-Xk-1FH" secondAttribute="bottom" constant="5" id="kVZ-Hm-Xi0"/>
                             <constraint firstItem="bsb-Xk-1FH" firstAttribute="leading" secondItem="aXm-I1-kJ2" secondAttribute="trailing" constant="20" id="q6C-OU-Ndl"/>
+                            <constraint firstItem="L1u-qN-u02" firstAttribute="top" secondItem="P3E-Kb-usQ" secondAttribute="bottom" constant="5" id="qFM-IC-Flx"/>
                             <constraint firstAttribute="trailing" secondItem="bsb-Xk-1FH" secondAttribute="trailing" constant="5" id="qvp-09-jUE"/>
                         </constraints>
                     </view>
@@ -69,6 +76,7 @@
             <accessibility key="accessibilityConfiguration" identifier="todo_list_item"/>
             <connections>
                 <outlet property="checkboxButton" destination="aXm-I1-kJ2" id="waZ-9K-Vvr"/>
+                <outlet property="descriptionTodo" destination="P3E-Kb-usQ" id="i1W-Sz-GtC"/>
                 <outlet property="timestamp" destination="L1u-qN-u02" id="ltg-gr-1dX"/>
                 <outlet property="todoTitle" destination="bsb-Xk-1FH" id="hO3-Jz-vs5"/>
             </connections>
