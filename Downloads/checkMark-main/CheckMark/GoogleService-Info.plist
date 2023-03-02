@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>257509975672-5qdlq5m7uq2ujl4725vdq474nse8ojc6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.257509975672-5qdlq5m7uq2ujl4725vdq474nse8ojc6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBHTTOgaFU2aartvw_QnPey_LrPWhMv61g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>257509975672</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mihiljose.CheckMark</string>
+	<key>PROJECT_ID</key>
+	<string>checkmark-bf39a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>checkmark-bf39a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:257509975672:ios:241f916252d4b42d746f8d</string>
+	<key>DATABASE_URL</key>
+	<string>https://checkmark-bf39a-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
