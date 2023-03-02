@@ -33,6 +33,7 @@ class SignUpViewController: UIViewController {
           // User is created and signed in
           // You can now access user.uid to identify the user in your database
             print(user.uid)
+            firebaseUserID = user.uid
             self.view.makeToast("Sign Up Succesfull!", duration: 3.0)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")

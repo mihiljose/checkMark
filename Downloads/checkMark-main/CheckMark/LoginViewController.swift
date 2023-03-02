@@ -27,6 +27,8 @@ class LoginViewController: UIViewController {
             return
           }
           // User is signed in
+            print(user.uid)
+            firebaseUserID = user.uid
             self.view.makeToast("Log In Succesfull!", duration: 3.0)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")

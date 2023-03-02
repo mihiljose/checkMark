@@ -91,6 +91,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func signOutBtn(_ sender: Any) {
+        firebaseUserID = nil
         self.view.makeToast("Log Out Succesfull!", duration: 3.0)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
@@ -130,7 +131,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         today_checklists.register(UINib(nibName: "todo_list_item", bundle: nil), forCellReuseIdentifier: "todo_list_item")
         
         // Fetch the list of to-do items from Firebase
-                ref.child("TodoTasks").observe(.value, with: { snapshot in
+                ref.child("TodoTasks\(firebaseUserID ?? "")").observe(.value, with: { snapshot in
                     self.todoItems.removeAll()
 
                     for child in snapshot.children {

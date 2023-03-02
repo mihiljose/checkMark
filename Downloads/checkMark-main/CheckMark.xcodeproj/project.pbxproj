@@ -19,6 +19,7 @@
 		A087A3C829A49EEE00E674C0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A087A3C729A49EEE00E674C0 /* FirebaseStorage */; };
 		A087A3CA29A49EEE00E674C0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A087A3C929A49EEE00E674C0 /* FirebaseStorageCombine-Community */; };
 		A0A51D9E29B050B900AD8F49 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A51D9D29B050B900AD8F49 /* SignUpViewController.swift */; };
+		A0A51DA029B08A7400AD8F49 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A51D9F29B08A7400AD8F49 /* GlobalVariables.swift */; };
 		A0B20C8D29ACBC7000BB8000 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B20C8C29ACBC7000BB8000 /* GoogleService-Info.plist */; };
 		A0B20C9029ACC33600BB8000 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A0B20C8F29ACC33600BB8000 /* Toast */; };
 		A0B76691299F52E30067ACE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B76690299F52E30067ACE8 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		A02CB72F29AF0BB700CC475B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A087A3B629A3510400E674C0 /* addEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEntryViewController.swift; sourceTree = "<group>"; };
 		A0A51D9D29B050B900AD8F49 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A0A51D9F29B08A7400AD8F49 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		A0B20C8C29ACBC7000BB8000 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0B7668D299F52E30067ACE8 /* CheckMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B76690299F52E30067ACE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				A02CB72D29ACC71C00CC475B /* Toast.swift */,
 				A02CB72F29AF0BB700CC475B /* LoginViewController.swift */,
 				A0A51D9D29B050B900AD8F49 /* SignUpViewController.swift */,
+				A0A51D9F29B08A7400AD8F49 /* GlobalVariables.swift */,
 			);
 			path = CheckMark;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				A0B76695299F52E30067ACE8 /* ViewController.swift in Sources */,
 				A087A3B729A3510400E674C0 /* addEntryViewController.swift in Sources */,
 				A0B76691299F52E30067ACE8 /* AppDelegate.swift in Sources */,
+				A0A51DA029B08A7400AD8F49 /* GlobalVariables.swift in Sources */,
 				A02CB73029AF0BB700CC475B /* LoginViewController.swift in Sources */,
 				A0B766A6299F5C6D0067ACE8 /* todo_list_item.swift in Sources */,
 				A0A51D9E29B050B900AD8F49 /* SignUpViewController.swift in Sources */,
